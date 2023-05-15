@@ -1,0 +1,81 @@
+---
+title: "¿Cuántas horas semanales dedican los ecuatorianos a la actividad física?"
+author: "Christian Salas Márquez"
+date: '2023-05-15'
+output:
+  html_document: default
+csl: style.csl
+bibliography: referencias-articulo-deporte.bib
+nocite: '@*'
+---
+
+```{r setup, include = FALSE}
+# Opciones de chunks
+knitr::opts_chunk$set(echo = F)
+```
+
+
+### Introducción
+
+Según cifras de la Organización Mundial de la Salud (OMS), 1 de cada 4 personas adultas en el mundo no llega a los niveles recomendados de actividad física. ¿Por qué es importante tomar en cuenta esta información? El ejercicio físico tiene una serie de beneficios para la salud física y mental de los seres humanos. Por ejemplo, previene enfermedades tales como el cáncer o la diabetes, puede reducir síntomas de ansiedad y depresión y contribuye a la mejora el aprendizaje y el razonamiento [@OMS.2020]. Por estos motivos, consideramos que es importante analizar qué ocurre en nuestro país y en particular, ¿Cuántas horas semanales dedican los ecuatorianos a la actividad física? 
+
+Para entender un poco más la idea expuesta anteriormente, es necesario conocer cuáles son los niveles recomendados de actividad física. La OMS recomienda que las personas de 18 a 64 años deberían realizar al menos 2.5 a 5 horas de actividad física (aeróbica) moderada o 1.25 a 2.5 horas de actividad física (aeróbica) intensa en el transcurso de la semana [@OMS.2020]. Tomando estos niveles recomendados en cuenta, podemos proceder con nuestro análisis.
+
+En particular, la pregunta que estudiamos en este artículo es: En la semana pasada ¿Hizo ejercicios o practicó algún deporte? y ¿Cuánto tiempo?, siendo esta última pregunta realizada sólo si el encuestado responde que sí a la primera pregunta. Luego, calculamos el promedio ponderado de horas semanales que los ecuatorianos dedican a hacer ejercicio o practicar deporte. Finalmente, analizamos cómo ha evolucionado este promedio comparando los resultados del año 2012 con los del 2019 y 2020. 
+
+Para desarrollar este análisis, utilizamos las siguientes bases de datos del Instituto Nacional de Estadística y Censos (INEC): _Encuesta Específica de Uso del Tiempo (EUT) 2012_ [@INEC.2012a], _Encuesta Nacional Multipropósito de Hogares 2019_ [@INEC.2019a], y la _Encuesta Nacional Multipropósito de Hogares 2020_ [@INEC.2020c]. Adicionalmente, es necesario aclarar que en las preguntas realizadas de estas encuestas, la pregunta no especifica si el ejercicio realizado es moderado o intenso.
+
+
+### Resultados
+
+```{r grafico-1}
+knitr::include_graphics("../images/grafico1-articulo-deporte.png")
+```
+
+Tenemos tres gráficos en esta primera visualización. Cada gráfico representa el tiempo semanal promedio en hacer ejercicio o deporte (en este caso por la categoría sexo) para los años 2012, 2019 y 2020 respectivamente. Para todas las visualizaciones mostradas en este artículo se cumple el mismo orden: 2012 - 2019 - 2020.
+
+En primer lugar, podemos ver que para el año 2012, los hombres dedicaron en promedio 0.77 horas semanales en hacer ejercicio o deportes mientras que las mujeres dedicaron 0.28 horas semanales. Por otro lado, para el año 2020, los hombres dedicaron en promedio 1.1 horas semanales en hacer ejercicio y las mujeres 0.59 horas semanales. Podemos ver que, en los años analizados, los hombres dedican mayor tiempo semanal a la actividad física.
+
+Por otro lado, la diferencia entre los promedios de horas semanales dedicadas al deporte entre hombres y mujeres para el 2012 es de 0.49 horas, esto significa que en el 2012, los hombres realizaron 0.49 horas más de ejercicio que las mujeres. Para el año 2019 esta diferencia es de 0.44 y para el 2020 es de 0.51. Es decir, esta diferencia se ha reducido en 2019 en comparación con la del 2012. Sin embargo, para el 2020, la diferencia vuelve a aumentar.
+
+Además, observamos que, en el caso de los hombres, el promedio de horas en hacer actividad física aumentó de 0.77 en el 2012 a 1.04 en el 2019 y se mantiene a un nivel parecido en el 2020 con 1.1 horas. Para las mujeres, el promedio de horas semanales en hacer ejercicio aumentó de 0.28 en el 2012 a 0.60 en 2019, y se mantiene en 0.59 en 2020.
+
+```{r grafico-2}
+knitr::include_graphics("../images/grafico2-articulo-deporte.png")
+```
+
+Para esta visualización, la primera observación importante que podemos destacar es que __en todos los grupos de edad y en los tres años analizados, los hombres dedican una mayor cantidad de horas semanales a la actividad física en comparación con las mujeres.__ 
+
+Además, podemos destacar que existe una tendencia en la cual el promedio de horas semanales en hacer ejercicio o practicar deporte disminuye a medida que aumenta el grupo de edad, tanto en hombres como en mujeres. Sin embargo, en el caso de los hombres, esta reducción en el promedio es mayor que en el de las mujeres. Por ejemplo, en el 2012, los hombres que tienen entre 12 y 19 años dedicaron 1.78 horas semanales a la actividad física mientras que los hombres del grupo de edad de personas entre 50 y 59 años dedicaron solo 0.41 horas semanales. Esto es una reducción de 1.37 horas semanales para los hombres entre los grupos de edad mencionados. Realizando un cálculo análogo para el caso de las mujeres (considerando el mismo año y los mismos grupos de edad), vemos que existe una reducción de 0.36 horas semanales.
+
+Realizando este mismo análisis para el año 2019 (considerando nuevamente los mismos grupos de edad) tenemos que, para los hombres existe una reducción de 1.23 horas semanales de actividad física y una reducción de 0.7 horas semanales en el caso de las mujeres. Notamos que, nuevamente los hombres son los que más horas semanales de actividad redujeron a medida que envejecieron. Finalmente, observamos que, __las mujeres de 20 años en adelante no alcanzan el nivel mínimo recomendado de 1.25 horas semanales de actividad física en los tres años analizados.__
+
+
+__¿Qué ocurrió en las Azuay, Guayas y Pichincha?__
+
+```{r grafico-3}
+knitr::include_graphics("../images/grafico3-articulo-deporte.png")
+```
+
+Finalizamos la interpretación de los resultados con esta última visualización. Observamos que en Azuay y Pichincha, ocurrió un mayor aumento en el tiempo semanal promedio dedicado a hacer ejercicio o deporte desde 2012 a 2019 y 2020, en comparación con Guayas. Comparando el año 2019 con el 2020, el promedio de horas semanales en hacer ejercicio en Guayas se reduce a un nivel menor al del 2012 en el caso de los hombres, y llega a tener el mismo tiempo semanal promedio que en el año 2012 para el caso de las mujeres. 
+
+Con respecto a las diferencias entre el tiempo que dedican hombres y mujeres, para el año 2012 estas son: 0.58 horas para Azuay, 0.47 para Guayas y 0.36 para Pichincha. Comparando para el año 2019, las diferencias esta vez son: 0.64 horas para Azuay, 0.37 para Guayas y 0.52 para Pichincha. En general, para ambos sexos ocurrió un aumento del tiempo semanal dedicado a la actividad física de 2012 a 2019.
+
+Además, aunque Guayas sea la provincia que tiene el menor tiempo promedio (tanto para hombres y mujeres), es la que tiene la menor diferencia entre hombres y mujeres en el 2019, con 0.37 horas. En el año 2020, esta diferencia en Guayas se mantiene a un valor de 0.4 horas, muy cercano al del 2019 a pesar de que en 2020 tanto los hombres como las mujeres hayan reducido sus horas semanales dedicadas al deporte.
+
+
+### Conclusiones
+
+En conclusión, hemos encontrado que los hombres dedican más tiempo semanal promedio a hacer ejercicio o deporte que las mujeres, en todos los casos analizados. En los tres años analizados, los hombres jóvenes que tienen entre 20 y 29 años tienden a alcanzar el nivel mínimo recomendado de 1.25 horas semanales en hacer actividad física aeróbica intensa, mientras que las mujeres de 20 años en adelante no alcanzan el nivel mínimo recomendado de 1.25 horas semanales de actividad física. Además, hemos observado que las personas más jóvenes son las que más tiempo semanal dedican en hacer ejercicio o practicar algún deporte. Finalmente, Guayas es la provincia que tuvo un menor aumento de tiempo semanal promedio dedicado a la actividad física de 2012 a 2019, en comparación con Azuay y Pichincha.
+
+En el siguiente repositorio de [GitHub](https://github.com/christianjaviersalasmarquez/ut-ec-semanal-deportes), podrás revisar el código, encontrar los cálculos y reproducir el análisis.
+
+### Notas metodológicas importantes
+
+(1) La _Encuesta Específica de Uso del Tiempo, EUT - 2012_ tiene un tamaño muestral de 22968 viviendas. Su población objetivo está constituida por las personas de 12 años y más. El periodo de levantamiento de esta encuesta fue entre noviembre y diciembre de 2012 [@INEC.2013].
+
+(2) La _Encuesta Nacional Multipropósito de Hogares 2019_ tiene como población objetivo a los hogares y personas, de 5 años en adelante para recabar temas sociodemográficos, y de 16 años en adelante para temas de percepción. El tamaño muestral es de 12072 viviendas. La fase de recolección de datos de esta encuesta se ejecutó en diciembre de 2019 [@INEC.2020b].
+
+(3) La _Encuesta Nacional Multipropósito de Hogares 2020_ tiene como población objetivo a las personas de 5 años en adelante, y como unidad de análisis a los hogares y personas. El tamaño muestral es de 12060 viviendas. El periodo de recolección de datos fue en diciembre de 2020 [@INEC.2021d].
+
+### Referencias
