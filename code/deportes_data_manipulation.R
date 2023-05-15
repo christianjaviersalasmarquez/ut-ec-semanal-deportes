@@ -56,7 +56,7 @@ UT111_UT2012 <- data_UT2012 %>%
 UT111_UT2012[c('UT111A','UT111B','UT111C','UT111D')] <- sapply(UT111_UT2012[c('UT111A','UT111B','UT111C','UT111D')], 
                                                                FUN = function(x) ifelse(is.na(x), 0, x))
 
-UT111_UT2012$t_horas_cocina <- UT111_UT2012$UT111A + 
+UT111_UT2012$t_horas_deporte <- UT111_UT2012$UT111A + 
   (UT111_UT2012$UT111B/60) + 
   UT111_UT2012$UT111C + 
   (UT111_UT2012$UT111D/60)
@@ -126,7 +126,7 @@ S6P4_UT2019 <- data_personas2019 %>%
 S6P4_UT2019[c('s6p4a','s6p4b','s6p4c','s6p4d')] <- sapply(S6P4_UT2019[c('s6p4a','s6p4b','s6p4c','s6p4d')], 
                                                           FUN = function(x) ifelse(is.na(x), 0, x))
 
-S6P4_UT2019$t_horas_cocina <- (S6P4_UT2019$s6p4a) + 
+S6P4_UT2019$t_horas_deporte <- (S6P4_UT2019$s6p4a) + 
   (S6P4_UT2019$s6p4b/60) + 
   (S6P4_UT2019$s6p4c) + 
   (S6P4_UT2019$s6p4d/60)
@@ -193,7 +193,7 @@ S6P4_UT2020 <- df_analisis_UT2020 %>%
 S6P4_UT2020[c('s6p4a','s6p4b','s6p4c','s6p4d')] <- sapply(S6P4_UT2020[c('s6p4a','s6p4b','s6p4c','s6p4d')], 
                                                           FUN = function(x) ifelse(is.na(x), 0, x))
 
-S6P4_UT2020$t_horas_cocina <- (S6P4_UT2020$s6p4a) + 
+S6P4_UT2020$t_horas_deporte <- (S6P4_UT2020$s6p4a) + 
   (S6P4_UT2020$s6p4b/60) + 
   (S6P4_UT2020$s6p4c) + 
   (S6P4_UT2020$s6p4d/60)
