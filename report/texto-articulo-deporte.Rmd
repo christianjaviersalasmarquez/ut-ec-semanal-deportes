@@ -1,11 +1,12 @@
 ---
 title: "¿Cuántas horas semanales dedican los ecuatorianos a la actividad física?"
 author: "Christian Salas Márquez"
-date: '2023-05-15'
+date: "2023-05-15"
 output:
+  word_document: default
   html_document: default
 csl: style.csl
-bibliography: referencias-articulo-deporte.bib
+bibliography: "referencias-articulo-deporte.bib"
 nocite: '@*'
 ---
 
@@ -13,7 +14,6 @@ nocite: '@*'
 # Opciones de chunks
 knitr::opts_chunk$set(echo = F)
 ```
-
 
 ### Introducción
 
