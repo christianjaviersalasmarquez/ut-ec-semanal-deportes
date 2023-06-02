@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = F)
 
 ### Introducción
 
-Según cifras de la Organización Mundial de la Salud (OMS), 1 de cada 4 personas adultas en el mundo no llega a los niveles recomendados de actividad física. Es importante mantener un rastro de como la población realiza deporte, puesto que el ejercicio físico tiene una serie de beneficios para la salud física y mental de los seres humanos. Por ejemplo, previene enfermedades tales como el cáncer o la diabetes, puede reducir síntomas de ansiedad y depresión y contribuye a la mejora el aprendizaje y el razonamiento [@OMS.2020]. Por estos motivos, consideramos que es importante analizar qué ocurre en nuestro país y en particular, ¿Cuántas horas semanales dedican los ecuatorianos a la actividad física? 
+Según cifras de la Organización Mundial de la Salud (OMS), 1 de cada 4 personas adultas en el mundo no llega a los niveles recomendados de actividad física. Es importante mantener un rastro de cómo la población realiza deporte, puesto que el ejercicio físico tiene una serie de beneficios para la salud física y mental de los seres humanos. Por ejemplo, previene enfermedades tales como el cáncer o la diabetes, puede reducir síntomas de ansiedad y depresión y contribuye a la mejora del aprendizaje y el razonamiento [@OMS.2020]. Por estos motivos, consideramos que es importante analizar qué ocurre en nuestro país y en particular, ¿Cuántas horas semanales dedican los ecuatorianos a la actividad física? 
 
 Para entender un poco más lo expuesto anteriormente, es necesario conocer cuáles son los niveles recomendados de actividad física. La OMS recomienda que las personas de 18 a 64 años deberían realizar al menos 2.5 a 5 horas de actividad física (aeróbica) moderada o 1.25 a 2.5 horas de actividad física (aeróbica) intensa en el transcurso de la semana [@OMS.2020]. Tomando estos niveles recomendados en cuenta, podemos proceder con nuestro análisis.
 
@@ -45,7 +45,7 @@ Además, podemos destacar que existe una tendencia en la cual el promedio de hor
 
 Realizando este mismo análisis para el año 2019 (considerando nuevamente los mismos grupos de edad) tenemos que, para los hombres existe una reducción de 1.23 horas semanales de actividad física y una reducción de 0.7 horas semanales en el caso de las mujeres. Notamos que, nuevamente los hombres son los que más horas semanales de actividad redujeron a medida que envejecieron. Finalmente, observamos que, __las mujeres de 20 años en adelante no alcanzan el nivel mínimo recomendado de 1.25 horas semanales de actividad física en los tres años analizados.__
 
-__¿Qué ocurrió en las Azuay, Guayas y Pichincha?__
+__¿Qué ocurrió en Azuay, Guayas y Pichincha?__
 
 ```{r grafico-3}
 knitr::include_graphics("../images/grafico3-articulo-deporte.png")
