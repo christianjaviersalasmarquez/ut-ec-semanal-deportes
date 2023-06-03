@@ -1,5 +1,5 @@
 ---
-title: "¿Cuántas horas semanales dedican los ecuatorianos a la actividad física?"
+title: "Uso del tiempo: ¿cuántas horas semanales dedican los ecuatorianos a la actividad física?"
 author: "Christian Salas Márquez"
 date: "2023-05-15"
 output:
