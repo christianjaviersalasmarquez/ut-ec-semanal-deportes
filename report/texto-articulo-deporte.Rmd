@@ -3,9 +3,9 @@ title: "Uso del tiempo: ¿cuántas horas semanales dedican los ecuatorianos a la
 author: "Christian Salas Márquez"
 date: "2023-05-15"
 output:
-  word_document: default
   html_document: default
-csl: style.csl
+  word_document: default
+csl: apa_num.csl
 bibliography: "referencias-articulo-deporte.bib"
 nocite: '@*'
 ---
@@ -14,6 +14,8 @@ nocite: '@*'
 # Opciones de chunks
 knitr::opts_chunk$set(echo = F)
 ```
+
+*Desde el Quantificador una vez más estudiamos el uso del tiempo de los ecuatorianos, esta vez enfocados en el tiempo que se dedica al deporte en el país. Utilizado la Encuesta Específica de Uso del Tiempo y la Encuesta Nacional Multipropósito, comparamos el uso del tiempo del ecuatoriano para actividad física y deporte con el tiempo recomendado por la OMS, observando la variación entre perfiles demográficos y provincias.* 
 
 ### Introducción
 
